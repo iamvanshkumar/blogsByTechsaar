@@ -1,0 +1,9 @@
+#heroCarousel{
+  width: 100%; /* Default width for all devices */
+}
+
+@media (min-width: 1200px) { /* Adjust breakpoint as needed */
+  #heroCarousel {
+    width: 83%;
+  }
+}

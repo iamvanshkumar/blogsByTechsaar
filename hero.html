@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs By Techsaar</title>
+
+    <meta name="description" content="Techsaar: Empowering businesses with innovative technology solutions. Offering custom software development, tech support, website development, logo/graphic design, startup growth services, and outbound VOIP auto dialer solutions.">
+    <meta name="keywords" content="tech solutions, software development, tech support, website development, graphic design, startup growth, VOIP auto dialer">
+    <meta name="author" content="Techsaar">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Techsaar - Cutting-Edge Technology Solutions and Digital Services">
+    <meta property="og:description" content="Empowering businesses with innovative technology solutions. Offering custom software development, tech support, website development, logo/graphic design, startup growth services, and outbound VOIP auto dialer solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.techsaar.co.in">
+    <meta property="og:image" content="https://www.techsaar.co.in/assets/img/og-image.jpg">
+    <meta property="og:site_name" content="Techsaar">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Techsaar - Cutting-Edge Technology Solutions and Digital Services">
+    <meta name="twitter:description" content="Empowering businesses with innovative technology solutions. Offering custom software development, tech support, website development, logo/graphic design, startup growth services, and outbound VOIP auto dialer solutions.">
+    <meta name="twitter:image" content="https://www.techsaar.co.in/assets/img/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./assets/img/favicon/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Lilita+One&display=swap" rel="stylesheet">
+
+    <!-- CSS and JS Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="./assets/css/style.css" rel="stylesheet"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-A1LL8B6yXeA62lHRgiFgXv4mW4omlB8kLFH5k/J8CkPPkoJ6oXV4wOaE4bQ+l7RrBNF4J9/vdj/rhQpe6fH9jw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
+    <!-- css.gg -->
+    <link href="https://css.gg/css" rel="stylesheet" />
+    <!-- UNPKG -->
+    <link href="https://unpkg.com/css.gg/icons/icons.css" rel="stylesheet" />
+    <!-- JSDelivr -->
+    <link href="https://cdn.jsdelivr.net/npm/css.gg/icons/icons.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- css -->
+     <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            font-family: "Arimo", sans-serif;
+        }
+        
+        .text-lavender {
+            color: #836FFF;
+        }
+        
+        .bg-lavender {
+            background-color: #836FFF;
+        }
+        
+        .text-dark-blue {
+            color: #211951;
+        }
+        
+        .bg-dark-blue {
+            background-color: #211951;
+        }
+        
+        .text-sea-green {
+            color: #15F5BA;
+        }
+        
+        .bg-sea-green {
+            background-color: #15F5BA;
+        }
+        
+        .text-white-screen {
+            color: #f0f3ff;
+        }
+        
+        .bg-white-screen {
+            background-color: #f0f3ff;
+        }
+        
+        #navbar-btn:hover {
+            background: #f0f3ff;
+        }
+        
+        @media screen and (min-width:200px) and (max-width:900px) {
+            nav {
+                border-bottom: 4px solid #15F5BA;
+            }
+        }
+        /* Ensure the sidebar doesn't overlap the content on large screens */
+        
+        .content {
+            padding-right: 300px;
+            /* Adjust based on the sidebar width */
+        }
+    </style>
+
+</head>
+
+<body class="bg-white-screen">
+    <header class="bg-white shadow-xl text-lavender fixed top-0 left-0 right-0 z-50">
+        <nav class="max-w-screen-xl grid grid-cols-7 items-center justify-between mx-auto p-4">
+            <div class="flex items-center justify-start gap-1 text-black md:text-md text-sm">
+                <img src="https://cdn-icons-png.flaticon.com/512/3845/3845731.png" class="md:w-10 h-6" alt="">
+                <span class="flex flex-col">
+                    <h4 class="font-semibold">Dehardun</h4>
+                    <span>24°C</span>
+                </span>
+            </div>
+
+            <a href="#" class="col-span-5 flex items-center justify-center">
+                <img draggable="false" src="./assets/img/logo/blogs_by_techsaar_logo.png" class="md:h-12 h-10" alt="Flowbite Logo" />
+            </a>
+            <div class="flex items-center justify-end">
+                <button id="navbar-btn" data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-md md:hidden focus:outline-none focus:ring-0" aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <i class='bx bx-menu text-lavender text-3xl'></i>
+                </button>
+                <button style="border: 2px solid #836FFF;" class="md:flex hidden items-center text-sm gap-1 rounded-md bg-dark-blue  px-4 py-[8px] font-medium text-white transition duration-300 ease-in-out ">
+                    <i class="fa-solid fa-bell fa-shake"></i> Subscribe
+                </button>
+            </div>
+        </nav>
+        <div style="border-bottom: 4px solid #836FFF;" class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1 bg-dark-blue py-2 px-4 transition duration-200" id="navbar-cta">
+            <ul class="flex flex-col font-medium text-sm text-white p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 border-2 md:rounded-none rounded-md border-gray-100">
+                <li><a href="#" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md" aria-current="page">Home</a></li>
+                <li><a href="./blogs/" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Trending
+                        News</a>
+                </li>
+                <li><a href="#about" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Featured</a>
+                </li>
+                <li><a href="#services" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Projects</a>
+                </li>
+                <li><a href="#products" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Tips
+                        & Tricks</a>
+                    <li><a href="#reviews" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Tools
+                        & Shortcuts</a>
+                        <li><a href="#reviews" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Open
+                        Source & Free Software</a>
+                            <li><a href="#reviews" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Roadmaps</a>
+                                <li><a href="#reviews" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Job
+                        Requirements</a>
+                                    <li><a href="#reviews" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Best
+                        Buy</a>
+            </ul>
+        </div>
+    </header>
+
+    <!-- <aside> -->
+    <!-- Sidebar -->
+    <div id="sidebar" class="  fixed top-28 z-40 right-0 h-full w-72 bg-white text-dark-blue shadow-xl transform translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out ">
+        <div class="p-4">
+            <div class="py-4 border-b border-white">
+                <h2 class="text-lg font-bold mb-4 flex items-center">
+                    <i class='bx bx-search-alt mr-1'></i> What's on your mind ?
+                </h2>
+                <div class="flex items-center w-full gap-1">
+                    <input class="w-full bg-gray-100 border border-gray-300 text-sm text-dark-blue focus:ring-0  py-1.5 px-3 rounded-md" type="text" name="search" id="search" placeholder="Search...">
+                    <button class="md:flex hidden items-center text-sm gap-1 rounded-md bg-dark-blue  py-1.5 px-3 font-medium text-white transition duration-300 ease-in-out ">Search</button>
+                </div>
+            </div>
+            <div class="py-4 border-b border-white">
+                <h2 class="text-md font-bold mb-4 flex items-center">
+                    <i class='bx bxs-hot'></i> Trending News
+                </h2>
+                <div class="flex flex-col items-center w-full gap-1">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const sidebarToggle = document.getElementById('sidebar-toggle');
+        const sidebar = document.getElementById('sidebar');
+
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('translate-x-full');
+        });
+    </script>
+
+    <!-- </aside> -->
+
+
+
+    <main>
+        <section id="hero">
+
+          <!-- carousel -->
+
+
+          <div id="heroCarousel" class="relative top-20 md:top-28  w-" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="flex relative  h-56 overflow-hidden rounded-lg md:h-96">
+                 <!-- Item 1 -->
+                <div class=" duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class=" duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class=" duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class=" duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class=" duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://plus.unsplash.com/premium_photo-1680700221525-c41dc28197f2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dGVjaHxlbnwwfHwwfHx8MA%3D%3D" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+        
+
+          </div>
+
+          <!-- carousel ends -->
+
+        </section>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+
+</html>
