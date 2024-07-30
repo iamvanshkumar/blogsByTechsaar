@@ -53,6 +53,9 @@
     <!-- JSDelivr -->
     <link href="https://cdn.jsdelivr.net/npm/css.gg/icons/icons.css" rel="stylesheet" />
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <style>
         * {
             font-family: "Arimo", sans-serif;
@@ -89,6 +92,16 @@
         .bg-white-screen {
             background-color: #f0f3ff;
         }
+        
+        #navbar-btn:hover {
+            background: #f0f3ff;
+        }
+        
+        @media screen and (min-width:200px) and (max-width:900px) {
+            nav {
+                border-bottom: 4px solid #15F5BA;
+            }
+        }
     </style>
 
 </head>
@@ -96,50 +109,48 @@
 <body class="bg-white-screen">
 
     <header class="bg-white shadow-sm text-lavender">
-        <nav class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <div class="flex items-center gap-1 text-black">
-                <img src="https://cdn-icons-png.flaticon.com/512/3845/3845731.png" class="w-10 h-10" alt="">
+        <nav class="max-w-screen-xl grid grid-cols-7 items-center justify-between mx-auto p-4">
+            <div class="flex items-center justify-start gap-1 text-black md:text-md text-sm">
+                <img src="https://cdn-icons-png.flaticon.com/512/3845/3845731.png" class="md:w-10 h-6" alt="">
                 <span class="flex flex-col">
                     <h4 class="font-semibold">Dehardun</h4>
-                    <h4>24°C</h4>
+                    <span>24°C</span>
                 </span>
             </div>
 
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="#" class="col-span-5 flex items-center justify-center">
                 <img draggable="false" src="./assets/img/logo/blogs_by_techsaar_logo.png" class="md:h-12 h-10" alt="Flowbite Logo" />
             </a>
-            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-200 rounded-md md:hidden hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-cta"
-                    aria-expanded="false">
+            <div class="flex items-center justify-end">
+                <button id="navbar-btn" data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-md md:hidden focus:outline-none focus:ring-0" aria-controls="navbar-cta" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
+                    <i class='bx bx-menu text-lavender text-3xl'></i>
+                </button>
+                <button style="border: 2px solid #15F5BA;" class="md:flex hidden items-center text-sm gap-1 rounded-md bg-lavender  px-4 py-[8px] font-medium text-white transition duration-300 ease-in-out ">
+                    <i class="fa-solid fa-bell fa-shake"></i> Subscribe
                 </button>
             </div>
         </nav>
-        <div class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1 bg-lavender py-2 px-4" id="navbar-cta">
+        <div style="border-bottom: 4px solid #15F5BA;" class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1 bg-lavender py-2 px-4 transition duration-200" id="navbar-cta">
             <ul class="flex flex-col font-medium text-sm text-white p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 border-2 md:rounded-none rounded-md border-gray-100">
-                <li><a href="#" class="hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md" aria-current="page">Home</a></li>
-                <li><a href="./blogs/" class="hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Trending
+                <li><a href="#" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md" aria-current="page">Home</a></li>
+                <li><a href="./blogs/" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Trending
                         News</a>
                 </li>
-                <li><a href="#about" class="hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Featured</a>
+                <li><a href="#about" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Featured</a>
                 </li>
-                <li><a href="#services" class="hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Projects</a>
+                <li><a href="#services" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Projects</a>
                 </li>
-                <li><a href="#products" class="hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Tips
+                <li><a href="#products" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Tips
                         & Tricks</a>
-                    <li><a href="#reviews" class="hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Tools
+                    <li><a href="#reviews" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Tools
                         & Shortcuts</a>
-                        <li><a href="#reviews" class="hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Open
+                        <li><a href="#reviews" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Open
                         Source & Free Software</a>
-                            <li><a href="#reviews" class="hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Roadmaps</a>
-                                <li><a href="#reviews" class="hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Job
+                            <li><a href="#reviews" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Roadmaps</a>
+                                <li><a href="#reviews" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Job
                         Requirements</a>
-                                    <li><a href="#reviews" class="hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Best
+                                    <li><a href="#reviews" class="md:hover:border-b-2 transition duration-200 block py-2 px-3 md:p-0 md:hover:bg-transparent hover:bg-gray-50 md:hover:text-white hover:text-black md:rounded-none rounded-md">Best
                         Buy</a>
             </ul>
         </div>
@@ -153,6 +164,17 @@
         </section>
     </main>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </body>
+
 
 </html>
